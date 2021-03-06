@@ -1,4 +1,4 @@
-﻿"LOCATION","Country","SUBJECT","Subject","MEASURE","Measure","FREQUENCY","Frequency","TIME","Time","Unit Code","Unit","PowerCode Code","PowerCode","Reference Period Code","Reference Period","Value","Flag Codes","Flags"
+﻿"iso_code","Country","SUBJECT","Subject","MEASURE","Measure","FREQUENCY","Frequency","TIME","Time","Unit Code","Unit","PowerCode Code","PowerCode","Reference Period Code","Reference Period","Value","Flag Codes","Flags"
 "AUS","Australia","LOLITOAA","Leading Indicators OECD > Leading indicators > CLI > Amplitude adjusted","STSA","Level, rate or national currency, s.a.","M","Monthly","2020-01","Jan-2020","IDX","Index","0","Units",,,100.174634428393,,
 "AUS","Australia","LOLITOAA","Leading Indicators OECD > Leading indicators > CLI > Amplitude adjusted","STSA","Level, rate or national currency, s.a.","M","Monthly","2020-02","Feb-2020","IDX","Index","0","Units",,,100.166291609795,,
 "AUS","Australia","LOLITOAA","Leading Indicators OECD > Leading indicators > CLI > Amplitude adjusted","STSA","Level, rate or national currency, s.a.","M","Monthly","2020-03","Mar-2020","IDX","Index","0","Units",,,98.6346393499845,,

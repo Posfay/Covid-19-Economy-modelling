@@ -74,6 +74,7 @@ for obs in data:
     # Same country
     datetime_str_c = obs["date"]
     date_c = datetime.datetime.strptime(datetime_str_c, "%Y-%m-%d")
+    year_c = date_c.year
     month_c = date_c.month
     day_c = date_c.day
     if i == len(data) - 1:
@@ -99,7 +100,7 @@ for obs in data:
     # Month change
     if month_c != month_next:
         # Initializing new observation
-        new_obs = {'iso_code': obs["iso_code"], 'location': obs["location"], 'date': month_c}
+        new_obs = {"iso_code": obs["iso_code"], "location": obs["location"], "date": f"{year_c}-{month_c}"}
         # Including static data (only last day's data is enough)
         new_obs["total_cases"] = obs["total_cases"]
         new_obs["total_deaths"] = obs["total_deaths"]

@@ -1,0 +1,66 @@
+start_date: 2020-05
+end_date: 2021-01
+
+countries (29):
+AUS
+AUT
+BEL
+CAN
+CHL
+CZE
+DNK
+EST
+FIN
+FRA
+DEU
+GRC
+HUN
+ISL
+IRL
+ITA
+JPN
+KOR
+NLD
+NOR
+POL
+PRT
+SVK
+SVN
+ESP
+SWE
+CHE
+GBR
+USA
+
+fieldnames:
+iso_code
+Country
+SUBJECT
+Subject
+MEASURE
+Measure
+FREQUENCY
+Frequency
+TIME
+Time
+Unit Code
+Unit
+PowerCode Code
+PowerCode
+Reference Period Code
+Reference Period
+Value
+Flag Codes
+Flags
+
+include (4):
+iso_code
+Country
+TIME
+Value
+
+final fieldnames:
+iso_code
+country
+date
+oecd_mei_index
