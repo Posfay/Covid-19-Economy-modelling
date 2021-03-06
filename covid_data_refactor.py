@@ -100,7 +100,8 @@ for obs in data:
     # Month change
     if month_c != month_next:
         # Initializing new observation
-        new_obs = {"iso_code": obs["iso_code"], "location": obs["location"], "date": f"{year_c}-{month_c}"}
+        new_obs = {"iso_code": obs["iso_code"], "location": obs["location"],
+                   "date": date_c.strftime("%Y-%m")}
         # Including static data (only last day's data is enough)
         new_obs["total_cases"] = obs["total_cases"]
         new_obs["total_deaths"] = obs["total_deaths"]
