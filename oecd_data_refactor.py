@@ -7,7 +7,7 @@ countries = ("AUS", "AUT", "BEL", "CAN", "CHL", "CZE", "DNK", "EST", "FIN", "FRA
 start_date = datetime.datetime(2020, 5, 1)
 data = []
 fieldnames = []
-include_new = ["iso_code", "location", "date", "oecd_mei_index"]
+include_new = ["iso_code", "location", "date", "oecd_cli_index"]
 subject = "Leading Indicators OECD > Leading indicators > CLI > Amplitude adjusted"
 
 with open("MEI CLI.csv", "r", encoding="utf-8-sig") as file:
@@ -23,7 +23,7 @@ with open("MEI CLI.csv", "r", encoding="utf-8-sig") as file:
         sub = row["Subject"]
         if (cc in countries) and (date >= start_date) and (sub == subject):
             new_obs = {"iso_code": row["iso_code"], "location": row["Country"], "date": row["TIME"],
-                       "oecd_mei_index": row["Value"]}
+                       "oecd_cli_index": row["Value"]}
             data.append(new_obs)
 
 with open("monthly-narrowed-oecd-data.csv", "w", newline="") as csv_file:
